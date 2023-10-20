@@ -1,10 +1,7 @@
-<div align="center">
 
 # [RewsDraws.github.io](https://RewsDraws.github.io/)
 ## /Temporary site, will subject to change./
 #
-</div>
-<div>
 
 ## Hello!
 ### Good morning! I'm Rews!
@@ -46,7 +43,7 @@ For now, thank you for taking your time to visit. See you when another story pro
 ### License:
 
 * This project is distributed under the CC BY-NC 4.0 License.
-</div>
+
 
 ### Update logs:
 - Last updated on '23/10/21 at 00:53.
