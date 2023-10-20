@@ -1,6 +1,5 @@
 .vscode
 .idea
-
 .cache
 .sass-cache
 
@@ -10,3 +9,5 @@ server
 css
 public
 dist
+
+__article_drafts

@@ -1,74 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      <%- article.title %>
+    </title>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>
-    <%- article.title %>
-  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#F5F5F5">
+    <meta name="description" content="<%- article.summary %>">
+    <link rel="canonical" href="https://parksb.github.io/article/<%- article.id %>.html" />
 
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="<%- article.title %><% if (article.subtitle) { %>: <%- article.subtitle %> <% } %>">
+    <meta property="og:image" content="https://og-image-parksb.vercel.app/api/parksb-github-io?title=<%- article.encodedTitle %>&subtitle=<%- article.encodedSubtitle %>&date=<%- article.encodedDate %>">
+    <meta property="og:description" content="<%- article.summary %>">
 
-  <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../../src/scss/init.scss">
-  <link rel="stylesheet" href="../../src/scss/article.scss">
-</head>
+    <meta name="twitter:title" content="<%- article.title %><% if (article.subtitle) { %>: <%- article.subtitle %> <% } %>">
+    <meta name="twitter:image" content="https://og-image-parksb.vercel.app/api/parksb-github-io?title=<%- article.encodedTitle %>&subtitle=<%- article.encodedSubtitle %>&date=<%- article.encodedDate %>">
+    <meta name="twitter:description" content="<%- article.summary %>">
+    <meta name="twitter:card" content="summary_large_image">
 
-<body>
-  <header id="top-container" role="navigation">
-  </header>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="preload" href="../styles/article.css" as="style">
+    <link rel="stylesheet" href="../styles/article.css">
 
-  <main id="main-container">
-    <article id="article-container">
-      <h1 id="article-title">
-        <%- article.title %>
-      </h1>
-      <% if (article.subtitle) { %>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LKTJ5YFJR2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LKTJ5YFJR2');
+    </script>
+  </head>
+  <body>
+    <%- include(process.cwd() + '/app/templates/navigation'); %>
+    <main id="main-container">
+      <article id="article-container">
+        <div class="back-to-article-list">
+          <a href="../articles.html"><span class="symbol">←</span> Articles</a>
+        </div>
+        <h1 id="article-title">
+          <%- article.title %>
+        </h1>
+        <% if (article.subtitle) { %>
         <h2 id="article-subtitle">
           <%- article.subtitle %>
         </h2>
-      <% } %>
-      <time id="article-date">
-        <%- article.date %>
-      </time>
-
-      <section id="article-content-container">
-        <%- article.content %>
-      </section>
-
-      <section id="article-navigation">
-        <% if (nextArticle) { %>
+        <% } %>
+        <a href="https://github.com/parksb/parksb.github.io/commits/development/_articles/<%- article.filename %>">
+          <time id="article-date"><%- article.date %><span class="symbol">↗</span></time>
+        </a>
+        <section id="article-content-container">
+          <%- article.content %>
+        </section>
+        <section id="article-navigation">
+          <% if (nextArticle) { %>
           <div class="article-navigation-item article-navigation-next">
-            <a href="/article/<%- nextArticle.id %>.html">
-              <div class="article-navigation-arrow article-navigation-next">＜</div>
+            <a href="<%- nextArticle.id %>.html">
+              <div class="article-navigation-arrow article-navigation-next symbol">←</div>
               <div class="article-navigation-content article-navigation-next">
                 <p class="article-navigation-title"><%- nextArticle.title %></p>
                 <p class="article-navigation-subtitle"><%- nextArticle.subtitle %></p>
               </div>
             </a>
           </div>
-        <% } %>
-        <% if (prevArticle) { %>
+          <% } %>
+          <% if (prevArticle) { %>
           <div class="article-navigation-item article-navigation-prev">
-            <a href="/article/<%- prevArticle.id %>.html">
-              <div class="article-navigation-arrow article-navigation-prev">＞</div>
+            <a href="<%- prevArticle.id %>.html">
+              <div class="article-navigation-arrow article-navigation-prev symbol">→</div>
               <div class="article-navigation-content article-navigation-prev">
                 <p class="article-navigation-title"><%- prevArticle.title %></p>
                 <p class="article-navigation-subtitle"><%- prevArticle.subtitle %></p>
               </div>
             </a>
           </div>
-        <% } %>
-      </section>
-
-      <section id="article-list-button-container">
-        <a href="/articles.html">
-          <div id="article-list-button">📚</div>
-        </a>
-      </section>
-    </article>
-  </main>
-
-  <script defer src="../../src/ts/init.ts"></script>
-</body>
+          <% } %>
+        </section>
+        <section id="article-comments">
+          <script async src="https://utteranc.es/client.js" repo="parksb/parksb.github.io-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous"></script>
+        </section>
+        <div class="back-to-article-list">
+          <a href="../articles.html"><span class="symbol">←</span> Articles</a>
+        </div>
+      </article>
+    </main>
+    <%- include(process.cwd() + '/app/templates/footer_cc'); %>
+  </body>
+</html>

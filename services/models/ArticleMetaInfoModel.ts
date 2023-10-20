@@ -7,7 +7,7 @@ interface ArticleMetaInfoModel {
 
   date: string;
 
-  tags: string | string[];
+  filename: string;
 }
 
 export default ArticleMetaInfoModel;
