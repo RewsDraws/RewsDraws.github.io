@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<body>
 
 # [RewsDraws.github.io](https://RewsDraws.github.io/)
 ## /Temporary site, will subject to change./
@@ -47,3 +50,6 @@ For now, thank you for taking your time to visit. See you when another story pro
 
 ### Update logs:
 - Last updated on '23/10/21 at 00:53.
+
+</body>
+</html>
