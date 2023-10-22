@@ -1,4 +1,4 @@
-# [RewsDraws.github.io](https://RewsDraws.github.io/)
+# Welcome to [RewsDraws.github.io](https://RewsDraws.github.io/)!
 ## /Temporary site, will subject to change./
 
 ### Available in: [ภาษาไทย](https://RewsDraws.github.io/lang_thai)
