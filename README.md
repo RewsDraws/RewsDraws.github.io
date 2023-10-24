@@ -7,14 +7,15 @@
 ### Good morning! I'm Rews!
 
 Hello, my name is Rews, hence @RewsDraws!
-</n> You probably found this website from somewhere, welcome!<br>
+You probably found this website from somewhere, welcome!<br>
 I'm still figuring things out, it's tiring - and fun too!<br>
 
 Here are lists of my SNS:<br>
 Website: [RewsDraws.github.io](https://RewsDraws.github.io/)<br>
+Pixiv: [RewsCompilation](https://www.pixiv.net/en/users/93320702)<br>
 Facebook: [RewsDraws - RewsCompilation](https://www.facebook.com/profile.php?id=61550556206736)<br>
-YouTube: Not available yet.<br>
-Tumblr: Not available yet.<br>
+YouTube: [RewsCompilation](https://www.youtube.com/channel/UCoZo-mGtscVO1RdemQvCXiQ)<br>
+Tumblr: [RewsCompilation](rewscompilation.tumblr.com)<br>
 Twitter: [RewsDraws | RewsCompilation](https://twitter.com/RewsDraws)<br>
 
 This website is meant to give basic directions only, think of it as a map. Made open-source via [Github pages](https://docs.github.com/en/enterprise-server@3.7/pages).
@@ -47,9 +48,9 @@ For now, thank you for taking your time to visit. See you when another story pro
 * YES! Show me them! GIVE ME THEM!
 * Other fan-made products are fine :D as long as you made it yourself or been granted permission to. Feel free to show me those.
 * Provide credits when nescessary.
-### Update logs:
+### Last updates:
 - '23/10/21
 - '23/10/22
-
+- '23/10/24
 ### Experiments:
 <a href="https://rewsdraws.github.io/articels/">Articels</a>
