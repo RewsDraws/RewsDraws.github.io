@@ -6,6 +6,8 @@
 ## Hello!
 ### Good morning! I'm Rews!
 
+[Read about my current works here.](https://rewsdraws.github.io/works/en/)
+
 Hello, my name is Rews, hence @RewsDraws!
 You probably found this website from somewhere, welcome!<br>
 I'm still figuring things out, it's tiring - and fun too!<br>
